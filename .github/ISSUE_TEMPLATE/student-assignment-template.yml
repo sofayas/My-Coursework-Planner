@@ -1,0 +1,45 @@
+name: "Student Assignment Submission"
+description: "Use this template to submit your assignment or report coursework-related issues."
+title: "[Assignment Submission] <Assignment Title>"
+labels: ["student", "assignment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Instructions
+        Use this template to submit your assignments or report an issue related to your coursework.
+
+  - type: input
+    id: assignment_title
+    attributes:
+      label: Assignment Title
+      description: Provide the title of your assignment (e.g., "Wireframe to Web Code").
+      placeholder: "Enter assignment title here"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of your submission or issue.
+      placeholder: "Enter description here"
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      description: Enter the assignment deadline (if applicable).
+      placeholder: "YYYY-MM-DD"
+
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Questions or Blockers
+      description: If you have any questions or faced any blockers, describe them here.
+      placeholder: "Enter your questions or blockers here"
+
+  - type: textarea
+    id: pr_links
+    attributes:
+      label: Pull Request Links
+      description: Add links to your pull requests for this assignment (e.g., "Wireframe to Web Code" and "Form Controls").
+      placeholder: "Enter pull request links here"
